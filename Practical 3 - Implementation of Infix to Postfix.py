@@ -37,7 +37,7 @@ def infixToPostfix(infix):
 
 
 if __name__ == '__main__':
-    infix_expression = 'x^y/(5*z)+2'
+    infix_expression = input("Enter infix expression: ")  #'x^y/(5*z)+2'
     postfix_expression = infixToPostfix(infix_expression)
     print('Infix Expression:', infix_expression)
     print('Postfix Expression:', postfix_expression)

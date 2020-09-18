@@ -62,7 +62,7 @@ def q3(inp):
 def dfa2(string):
     dfa = 0
     for ch in string:
-        if dfa == 0: # Starting State
+        if dfa == 0:    # Starting State
             dfa = q0(ch)
         elif dfa == 1:
             dfa = q1(ch)
@@ -70,23 +70,23 @@ def dfa2(string):
             dfa = q2(ch)
         elif dfa == 3:
             dfa = q3(ch)
-        elif dfa == 4: # Reached Trap State
+        elif dfa == 4:  # Reached Trap State
             return False
         else:
             return False
-    if dfa == 3: # String Reached Final State
+    if dfa == 3:        # String Reached Final State
         return True
     return False
 
 
 if __name__ == '__main__':
-    string1 = 'abab'
+    string1 = input("Enter input string for DFA1: ")
     if (dfa1(string1)):
         print('Accepted!')
     else:
         print('Not Accepted!')
     
-    string2 = 'aaaaaab'
+    string2 = input("Enter input string for DFA2: ")
     if (dfa2(string2)):
         print('Accepted!')
     else:

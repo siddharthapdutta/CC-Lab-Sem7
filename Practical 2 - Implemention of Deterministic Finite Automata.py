@@ -13,7 +13,7 @@ def dfa(Q, S, q, transitions, F):
             print(dfa_state, end=' -> q')
             try:
                 dfa_state = transitions[dfa_state][ch]
-            except: # Undefined Transitions or Bad Character
+            except:             # Undefined Transitions
                 return False
             print(dfa_state)
 
