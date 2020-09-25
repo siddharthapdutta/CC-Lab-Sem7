@@ -9,19 +9,19 @@ generation phase of compiler
 
 def generate_ic(instructions):
     output = []
-    for instr in instructions:
-        output.append('MOV R0, ' + instr[1] + '\n')
-        if instr[0] == '+':
-            output.append('ADD R0, ' + instr[2] + '\n')
-        elif instr[0] == '-':
-            output.append('SUB R0, ' + instr[2] + '\n')
-        elif instr[0] == '*':
-            output.append('MUL R0, ' + instr[2] + '\n')
-        elif instr[0] == '/':
-            output.append('DIV R0, ' + instr[2] + '\n')
-        elif instr[0] == '=':
+    for op, arg1, arg2, res in instructions:
+        output.append('MOV R0, ' + arg1 + '\n')
+        if op == '+':
+            output.append('ADD R0, ' + arg2 + '\n')
+        elif op == '-':
+            output.append('SUB R0, ' + arg2 + '\n')
+        elif op == '*':
+            output.append('MUL R0, ' + arg2 + '\n')
+        elif op == '/':
+            output.append('DIV R0, ' + arg2 + '\n')
+        elif op == '=':
             pass
-        output.append('MOV ' + instr[3] + ', R0' + '\n')
+        output.append('MOV ' + res + ', R0' + '\n')
     return output
 
 
