@@ -11,3 +11,4 @@ This repository contains relevant implementation of topics from the CC Lab cours
 - [x] Implementation of intermediate code generation phase of compiler.
 - [x] Implementation of code generation phase of compiler.
 - [x] Program to find the FIRST and FOLLOW in a grammar.
+- [x] Implementation of lexical analyzer using LEX tool.
