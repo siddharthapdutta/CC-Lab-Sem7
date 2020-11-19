@@ -14,3 +14,4 @@ This repository contains relevant implementation of topics from the CC Lab cours
 - [x] Implementation of lexical analyzer using LEX tool.
 - [x] Acceptance of a string by DFA using LEX programming.
 - [x] Acceptance of a string by DFA using YACC programming.
+- [x] Conversion of infix to postfix expression using YACC programming.
