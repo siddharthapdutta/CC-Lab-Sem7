@@ -13,3 +13,4 @@ This repository contains relevant implementation of topics from the CC Lab cours
 - [x] Program to find the FIRST and FOLLOW in a grammar.
 - [x] Implementation of lexical analyzer using LEX tool.
 - [x] Acceptance of a string by DFA using LEX programming.
+- [x] Acceptance of a string by DFA using YACC programming.
