@@ -8,6 +8,7 @@ This repository contains relevant implementation of topics from the CC Lab cours
 - [x] Implementation of infix to postfix expression conversion.
 - [x] Implementation of lexical analyzer.
 - [x] Implementation of shift reduce parser.
+- [x] Implementation of top-down parser (recursive descent).
 - [x] Implementation of intermediate code generation phase of compiler.
 - [x] Implementation of code generation phase of compiler.
 - [x] Program to find the FIRST and FOLLOW in a grammar.
